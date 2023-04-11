@@ -19,6 +19,9 @@ type Entry struct {
 	LastAccess string
 }
 
+// JSONFILE resides in the current directory
+var CSVFILE = "./data.csv"
+
 type PhoneBook []Entry
 
 var data = PhoneBook{}
