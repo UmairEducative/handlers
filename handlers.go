@@ -26,6 +26,9 @@ type PhoneBook []Entry
 var data = PhoneBook{}
 var index map[string]int
 
+// JSONFILE resides in the current directory
+var CSVFILE = "./data.csv"
+
 func readCSVFile(filepath string) error {
 	_, err := os.Stat(filepath)
 	if err != nil {
